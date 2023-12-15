@@ -7,6 +7,8 @@ export default {
         inactive: "#A7A7A7",
         active: "#FFFFFF",
         background: "#121212",
+        background2: "#232323",
+        background3: "#353535",
         details: "#1AA7C6",
         "hover-details": "#14BADF",
       },
@@ -21,6 +23,9 @@ export default {
       },
       animation: {
         "button-fade-in": "button-fade-in 300ms ease-in-out forwards",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
