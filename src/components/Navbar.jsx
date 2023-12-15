@@ -25,11 +25,11 @@ export default function Navbar() {
             <Icons.SimpleArrowRight classes="text-inactive text-lg group-hover:text-active" />
           </button>
           <div
-            className={!isHome ? "flex justify-start group items-center gap-2 bg-[#242424] rounded-full p-2 h-12 w-[250px] sm:w-[300px] border-2 border-transparent group-focus-within:border-active" : "hidden"}
+            className={!isHome ? "flex justify-center sm:justify-start group items-center gap-2 bg-[#242424] rounded-full p-2 h-12 w-12 sm:w-[250px] md:w-[250px] xl:w-[400px] border-2 border-transparent group-focus-within:border-active" : "hidden"}
           >
             <Icons.SearchDefault classes="text-inactive text-lg" />
             <input
-              className="bg-transparent text-active font-normal h-[48px] w-full outline-none"
+              className="hidden sm:flex bg-transparent text-active font-normal h-[48px] w-full outline-none"
               type="text"
               name="search"
               id="search"
@@ -41,9 +41,9 @@ export default function Navbar() {
           <button className={isHome ? "hidden sm:hidden md:inline-flex items-center justify-center w-[170px] h-9 bg-active text-black rounded-full xl:hover:scale-[1.03] xl:duration-75" : "hidden"}>
             Esplora Premium
           </button>
-          <button className="inline-flex items-center justify-center gap-2 sm:px-4 px-0 sm:w-[150px] w-8 h-8 bg-black text-active rounded-full xl:hover:scale-[1.03] xl:duration-75">
+          <button className="inline-flex items-center justify-center gap-2 md:px-4 px-0 md:w-[150px] w-8 h-8 bg-black text-active rounded-full xl:hover:scale-[1.03] xl:duration-75">
             <Icons.Download classes="text-active text-lg" />
-            <p className="hidden sm:flex">Installa app</p>
+            <p className="hidden md:flex">Installa app</p>
           </button>
           <button className="group inline-flex items-center justify-center h-8 w-8 bg-black text-active rounded-full xl:hover:scale-110 xl:duration-75">
             <Icons.Notification classes="text-inactive text-lg lg:group-hover:text-active" />
