@@ -10,7 +10,7 @@ export default function LibraryCase() {
   }
 
   return (
-    <div className="overflow-hidden rounded-xl bg-background">
+    <div className="overflow-hidden w-[90px] rounded-xl bg-background">
       <div className="hidden lg:flex justify-between p-4 group">
         <div className="text-inactive flex gap-2 items-center transition duration-300 cursor-pointer group-hover:text-active">
           <Icons.Library classes="text-2xl"></Icons.Library>
