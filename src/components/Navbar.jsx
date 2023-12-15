@@ -1,8 +1,22 @@
 import Icons from "../components/Icons";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom"; 
 
 export default function Navbar() {
+  const [isHome, setIsHome] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log("location", location.pathname);
+    if (location.pathname === "/") {
+      setIsHome(true);
+    } else {
+      setIsHome(false);
+    }
+  }, [location]);
+
   return (
-      <nav className="bg-[#170E3A] text-sm font-bold flex justify-between items-center  px-5 w-full sm:px-5 py-3">
+      <nav className="bg-[#170E3A] text-sm font-bold flex justify-between items-center h-16 px-5 w-full sm:px-5 py-3">
         <div className="flex justify-center items-center gap-2">
           <button className="group hidden sm:hidden xl:flex justify-center items-center bg-black rounded-full h-8 w-8">
             <Icons.SimpleArrowLeft classes="text-inactive text-lg group-hover:text-active" />
@@ -11,7 +25,7 @@ export default function Navbar() {
             <Icons.SimpleArrowRight classes="text-inactive text-lg group-hover:text-active" />
           </button>
           <div
-            className="flex justify-start group items-center gap-2 bg-[#242424] rounded-full p-2 h-12 w-[250px] sm:w-[300px] border-2 border-transparent group-focus-within:border-active"
+            className={!isHome ? "flex justify-start group items-center gap-2 bg-[#242424] rounded-full p-2 h-12 w-[250px] sm:w-[300px] border-2 border-transparent group-focus-within:border-active" : "hidden"}
           >
             <Icons.SearchDefault classes="text-inactive text-lg" />
             <input
@@ -24,7 +38,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex justify-center items-center gap-2">
-          <button className="hidden sm:hidden md:inline-flex items-center justify-center w-[170px] h-9 bg-active text-black rounded-full xl:hover:scale-[1.03] xl:duration-75">
+          <button className={isHome ? "hidden sm:hidden md:inline-flex items-center justify-center w-[170px] h-9 bg-active text-black rounded-full xl:hover:scale-[1.03] xl:duration-75" : "hidden"}>
             Esplora Premium
           </button>
           <button className="inline-flex items-center justify-center gap-2 sm:px-4 px-0 sm:w-[150px] w-8 h-8 bg-black text-active rounded-full xl:hover:scale-[1.03] xl:duration-75">

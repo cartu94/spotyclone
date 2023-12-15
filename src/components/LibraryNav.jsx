@@ -1,6 +1,7 @@
 import Icons from "../components/Icons";
 
 export default function LibraryNav() {
+
   return (
     <div className="bg-transparent lg:bg-background lg:w-full text-sm font-bold">
       <div className="max-w-fit overflow-hidden lg:overflow-visible lg:flex lg:justify-between lg:items-center lg:max-w-full h-[80px] lg:h-full lg:p-5">

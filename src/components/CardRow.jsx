@@ -2,6 +2,10 @@
 import { useEffect, useState, useRef } from "react";
 import Card from "./Card";
 
+/**
+ * 
+ * @param {string} title il titolo della riga di card
+ */
 export default function CardRow({ title }) {
   const ref = useRef(null);
   const [screenWidth, setScreenWidth] = useState(0);

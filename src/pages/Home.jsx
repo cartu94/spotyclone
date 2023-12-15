@@ -9,8 +9,8 @@ export default function Home() {
       <div className="flex-col flex overflow-y-auto overflow-x-hidden">
       <HomeGreetings />
       <CardRow title={"Scelti per te"}/>
-      <CardRow title={"Scelti per te"}/>
-      <CardRow title={"Scelti per te"}/>
+      <CardRow title={"Playlist"}/>
+      <CardRow title={"Podcast"}/>
       </div>
     </div>
   )
