@@ -11,18 +11,18 @@ export default function LibraryCase() {
 
   return (
     <div className="overflow-hidden rounded-xl bg-background">
-      <div className="flex justify-between p-4 group">
-        <div className="text-inactive flex gap-4 items-center transition duration-300 cursor-pointer group-hover:text-active">
+      <div className="hidden lg:flex justify-between p-4 group">
+        <div className="text-inactive flex gap-2 items-center transition duration-300 cursor-pointer group-hover:text-active">
           <Icons.Library classes="text-2xl"></Icons.Library>
-          <p className="text-xl">La tua libreria</p>
+          <p className="text-lg font-bold">La tua libreria</p>
         </div>
 
-        <div className="text-inactive flex gap-4 items-center">
+        <div className="hidden text-inactive md:flex gap-4 items-center">
           <Icons.Plus classes="text-2xl transition duration-300 cursor-pointer hover:text-active"></Icons.Plus>
           <Icons.ArrowRight classes="text-2xl transition duration-300 cursor-pointer hover:text-active"></Icons.ArrowRight>
         </div>
       </div>
-      <div className="flex gap-2 px-2">
+      <div className="hidden lg:flex gap-2 px-2">
         <div className="group">
           <p className="text-active bg-background py-1 px-4 rounded-full transition duration-300 cursor-pointer group-hover:bg-white/20">
             Playlist
@@ -35,7 +35,7 @@ export default function LibraryCase() {
         </div>
       </div>
 
-      <div className="flex justify-between p-4">
+      <div className="hidden lg:flex justify-between p-4">
         <div className="flex items-center h-12">
           <button
             className="cursor-pointer mr-1 transition duration-300 hover:text-active hover:bg-white/20 rounded-full p-2"
@@ -57,7 +57,7 @@ export default function LibraryCase() {
         </div>
 
         <div className="text-inactive flex items-center gap-2 transition duration-300 cursor-pointer hover:text-active">
-          <p className="text-xl">List</p>
+          <p className="text-lg">List</p>
           <Icons.Menu classes="text-2xl"></Icons.Menu>
         </div>
       </div>
