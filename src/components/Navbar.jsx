@@ -2,8 +2,7 @@ import Icons from "../components/Icons";
 
 export default function Navbar() {
   return (
-    <div>
-      <nav className="font-montserrat text-sm font-bold flex justify-between items-center bg-background px-5 w-full sm:px-5 py-3">
+      <nav className="bg-[#170E3A] text-sm font-bold flex justify-between items-center  px-5 w-full sm:px-5 py-3">
         <div className="flex justify-center items-center gap-2">
           <button className="group hidden sm:hidden xl:flex justify-center items-center bg-black rounded-full h-8 w-8">
             <Icons.SimpleArrowLeft classes="text-inactive text-lg group-hover:text-active" />
@@ -37,14 +36,13 @@ export default function Navbar() {
           </button>
           <button className="rounded-full overflow-hidden h-8 w-8 xl:hover:scale-110 xl:duration-75">
             <img
-              src="src\assets\andrea_img\profilePic.png"
+              src="src\assets\img\profilePic.png"
               alt="profile pic"
               className="w-fit h-fit"
             />
           </button>
         </div>
       </nav>
-    </div>
     
   );
 }

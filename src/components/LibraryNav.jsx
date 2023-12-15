@@ -2,7 +2,7 @@ import Icons from "../components/Icons";
 
 export default function LibraryNav() {
   return (
-    <div className="bg-transparent lg:bg-background lg:w-full font-montserrat text-sm font-bold">
+    <div className="bg-transparent lg:bg-background lg:w-full text-sm font-bold">
       <div className="max-w-fit overflow-hidden lg:overflow-visible lg:flex lg:justify-between lg:items-center lg:max-w-full h-[80px] lg:h-full lg:p-5">
         <button className="group p-5 lg:p-0 bg-background shadow-[0_0_10px_5px_rgba(0,0,0,1)] lg:shadow-[0_0_0_0_rgba(0,0,0,1)] lg:text-inactive lg:flex lg:justify-center lg:items-center lg:gap-2 ">
           <Icons.Library classes="text-inactive text-2xl group-hover:text-active transition-all" />

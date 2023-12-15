@@ -1,4 +1,5 @@
 import Icons from "./Icons";
+// import {NavLink} from "react-router-dom";
 
 function activeSearch() {
   document.getElementById("searchDefault").classList.add("hidden");
@@ -14,7 +15,7 @@ function clickHome() {
 
 export default function LibraryNav() {
   return (
-    <div className="font-montserrat text-sm font-bold flex flex-col gap-5 p-5 bg-background">
+    <div className="text-sm font-bold flex flex-col gap-5 p-5 bg-background">
       <button onClick={clickHome} className="flex items-center gap-4 text-inactive group">
         <Icons.Home classes="text-inactive text-2xl group-hover:text-active transition-all" />
         <p className="group-hover:text-active transition-all hidden lg:block">Home</p>

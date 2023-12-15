@@ -10,7 +10,7 @@ export default function LibraryCase() {
   }
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden rounded-xl bg-background">
       <div className="flex justify-between p-4 group">
         <div className="text-inactive flex gap-4 items-center transition duration-300 cursor-pointer group-hover:text-active">
           <Icons.Library classes="text-2xl"></Icons.Library>
@@ -24,12 +24,12 @@ export default function LibraryCase() {
       </div>
       <div className="flex gap-2 px-2">
         <div className="group">
-          <p className="text-active bg-background p-2 rounded-xl transition duration-300 cursor-pointer group-hover:bg-white/20">
+          <p className="text-active bg-background py-1 px-4 rounded-full transition duration-300 cursor-pointer group-hover:bg-white/20">
             Playlist
           </p>
         </div>
         <div className="group">
-          <p className="text-active bg-background p-2 rounded-2xl transition duration-300 cursor-pointer group-hover:bg-white/20">
+          <p className="text-active bg-background py-1 px-4 rounded-full transition duration-300 cursor-pointer group-hover:bg-white/20">
             Artist
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function LibraryCase() {
             <Icons.SearchDefault classes="text-2xl text-inactive"></Icons.SearchDefault>
           </button>
           {isSearchVisible && (
-            <div className="flex justify-start group items-center gap-2 bg-[#242424] rounded-full px-4 w-[180px]  h-12 md:w-[250px] sm:w-[300px] border-2 border-transparent group-focus-within:border-active">
+            <div className="flex justify-start group items-center gap-2 bg-[#242424] rounded-full px-4 w-[150px] h-12 md:w-[180px] sm:w-[200px] border-2 border-transparent group-focus-within:border-active">
               <input
                 className="bg-transparent text-active font-normal h-12 w-full outline-none"
                 type="text"
