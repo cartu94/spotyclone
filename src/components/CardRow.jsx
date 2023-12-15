@@ -38,8 +38,8 @@ export default function CardRow({ title }) {
   }, [itemsNum, screenWidth]);
 
   return (
-    <div className={`w-[${divWidth}] flex flex-col gap-4 p-4 border-2 `}>
-      <div className="flex flex-col justify-between items-start sm:items-center sm:flex-row">
+    <div className={`w-[${divWidth}] flex flex-col gap-4 p-4`}>
+      <div className="flex flex-col justify-center sm:justify-between items-start sm:items-center sm:flex-row w-full">
         <h1 className="text-active font-bold text-2xl hover:underline cursor-pointer">
           {title}
         </h1>
@@ -54,7 +54,7 @@ export default function CardRow({ title }) {
             key={i}
             title={`Daily Mix ${i + 1}`}
             description={`I DONT KNOW HOW BUT THEY FOUND ME, The Happy Fits, NOTD e altro`}
-            image={`https://picsum.photos/200`}
+            image={`https://picsum.photos/700`}
           />
         ))}
       </div>
