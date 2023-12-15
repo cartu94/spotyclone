@@ -7,6 +7,20 @@ export default function CardRow({ title }) {
   const [screenWidth, setScreenWidth] = useState(0);
   const [divWidth, setDivWidth] = useState(0);
   const [itemsNum, setItemsNum] = useState(1);
+  const [playlists, setPlaylists] = useState([]);
+
+  console.log("empty",playlists.length > 0)
+
+  useEffect(() => {
+    fetch("data/playlists.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setPlaylists([...data])
+      }).catch((err) => {
+        console.error(err);
+      });
+      console.log("test",playlists)
+  }, []);
 
   useEffect(() => {
     // when the component gets mounted
@@ -49,12 +63,12 @@ export default function CardRow({ title }) {
       </div>
 
       <div ref={ref} className="w-full flex justify-center items-center gap-4">
-        {Array.from({ length: itemsNum }).map((_, i) => (
+      {playlists.length>0 &&  Array.from({ length: itemsNum }).map((_, i) => (
           <Card
             key={i}
-            title={`Daily Mix ${i + 1}`}
-            description={`I DONT KNOW HOW BUT THEY FOUND ME, The Happy Fits, NOTD e altro`}
-            image={`https://picsum.photos/700`}
+            title={playlists[i].title}
+            description={playlists[i].description}
+            image={playlists[i].image}
           />
         ))}
       </div>
