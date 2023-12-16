@@ -9,11 +9,10 @@ import Card from "./Card";
 export default function CardRow({ title }) {
   const ref = useRef(null);
   const [screenWidth, setScreenWidth] = useState(0);
-  const [divWidth, setDivWidth] = useState(0);
   const [itemsNum, setItemsNum] = useState(1);
   const [playlists, setPlaylists] = useState([]);
 
-  console.log("empty",playlists.length > 0)
+  // console.log("isPlaylistsNotEmpty",playlists.length > 0)
 
   useEffect(() => {
     fetch("data/playlists.json")
@@ -23,7 +22,7 @@ export default function CardRow({ title }) {
       }).catch((err) => {
         console.error(err);
       });
-      console.log("test",playlists)
+      // console.log("testPlaylists",playlists)
   }, []);
 
   useEffect(() => {
@@ -46,18 +45,9 @@ export default function CardRow({ title }) {
     }
   }, [screenWidth]);
 
-  useEffect(() => {
-    console.log("itemsNum", itemsNum, "screenWidth", screenWidth);
-    if (screenWidth >= 732) {
-      setDivWidth(itemsNum * 240);
-    } else {
-      setDivWidth(itemsNum * 182);
-    }
-  }, [itemsNum, screenWidth]);
-
   return (
-    <div className={`w-[${divWidth}] flex flex-col gap-4 p-4`}>
-      <div className="flex flex-col justify-center sm:justify-between items-start sm:items-center sm:flex-row w-full">
+    <div className={`flex flex-col gap-4 p-4`}>
+      <div className="flex flex-col justify-center sm:justify-between items-start sm:items-center sm:flex-row">
         <h1 className="text-active font-bold text-2xl hover:underline cursor-pointer">
           {title}
         </h1>
@@ -66,7 +56,7 @@ export default function CardRow({ title }) {
         </h3>
       </div>
 
-      <div ref={ref} className="w-full flex justify-center items-center gap-4">
+      <div ref={ref} className="w-full flex justify-center sm:justify-between items-center gap-4">
       {playlists.length>0 &&  Array.from({ length: itemsNum }).map((_, i) => (
           <Card
             key={i}

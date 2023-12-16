@@ -1,51 +1,57 @@
-import Icons from "./Icons";
+import { SearchActive, SearchDefault, HomeDefault, HomeActive } from "./Icons";
 import { Link } from "react-router-dom";
-
-function activeSearch() {
-  document.getElementById("searchDefault").classList.add("hidden");
-  document.getElementById("searchActive").classList.remove("hidden");
-  document.getElementById("textSearch").classList.add("text-active");
-}
-
-function clickHome() {
-  document.getElementById("searchDefault").classList.remove("hidden");
-  document.getElementById("searchActive").classList.add("hidden");
-  document.getElementById("textSearch").classList.remove("text-active");
-}
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function SearchHome() {
+  const [isHome, setIsHome] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    // console.log("location", location.pathname);
+    if (location.pathname === "/") {
+      setIsHome(true);
+    } else {
+      setIsHome(false);
+    }
+  }, [location]);
+
   return (
-    <div className="text-sm font-bold flex flex-col items-center lg:items-start gap-5 p-5 w-[90px] lg:w-[350px] bg-background rounded-xl">
-      <Link to="/">
-        <button
-          onClick={clickHome}
-          className="flex items-center gap-4 text-inactive group"
-        >
-          <Icons.Home classes="text-inactive text-2xl group-hover:text-active transition-all" />
-          <p className="group-hover:text-active transition-all hidden lg:block">
-            Home
-          </p>
-        </button>
+    <div className="text-sm font-bold flex flex-col items-center h-fit lg:items-start gap-5 p-5 w-[90px] lg:w-[320px] bg-background rounded-xl">
+      <Link
+        to="/"
+        className={
+          isHome
+            ? "flex items-center gap-4 text-active group"
+            : "flex items-center gap-4 text-inactive group"
+        }
+      >
+        {isHome ? (
+          <HomeActive classes=" text-2xl" />
+        ) : (
+          <HomeDefault classes="text-2xl group-hover:text-active transition-all" />
+        )}
+        <p className="group-hover:text-active transition-all hidden lg:block">
+          Home
+        </p>
       </Link>
 
-      <Link to="/categories">
-        <button
-          onClick={activeSearch}
-          className="flex items-center gap-4 text-inactive group"
-        >
-          <div id="searchDefault" className="">
-            <Icons.SearchDefault classes="text-inactive text-2xl group-hover:text-active transition-all" />
-          </div>
-          <div id="searchActive" className="hidden">
-            <Icons.SearchActive classes="text-active text-2xl" />
-          </div>
-          <p
-            id="textSearch"
-            className="group-hover:text-active transition-all hidden lg:block"
-          >
-            Cerca
-          </p>
-        </button>
+      <Link
+        to="/categories"
+        className={
+          !isHome
+            ? "flex items-center gap-4 text-active group"
+            : "flex items-center gap-4 text-inactive group"
+        }
+      >
+        {!isHome ? (
+          <SearchActive classes=" text-2xl" />
+        ) : (
+          <SearchDefault classes="text-2xl group-hover:text-active transition-all" />
+        )}
+        <p className="group-hover:text-active transition-all hidden lg:block">
+          Cerca
+        </p>
       </Link>
     </div>
   );

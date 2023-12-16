@@ -7,7 +7,7 @@ export default function Navbar() {
   const location = useLocation();
 
   useEffect(() => {
-    console.log("location", location.pathname);
+    // console.log("location", location.pathname);
     if (location.pathname === "/") {
       setIsHome(true);
     } else {
@@ -16,7 +16,7 @@ export default function Navbar() {
   }, [location]);
 
   return (
-      <nav className="bg-cyan-950 text-sm font-bold flex justify-between items-center h-[100px] px-5 w-full sm:px-5 py-3">
+      <nav className={`${isHome && "bg-cyan-950"} text-sm font-bold flex justify-between items-center h-16 px-5 w-full sm:px-5 py-3 absolute top-0 left-0 z-100`}>
         <div className="flex justify-center items-center gap-2">
           <button className="group hidden sm:hidden xl:flex justify-center items-center bg-black rounded-full h-8 w-8">
             <Icons.SimpleArrowLeft classes="text-inactive text-lg group-hover:text-active" />

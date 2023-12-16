@@ -27,6 +27,10 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      gridTemplateColumns: {
+        "my-2": "repeat(2, minmax(220px, 1fr))",
+        "my-3": "repeat(3, minmax(220px, 1fr))",
+      },
     },
   },
   plugins: [],

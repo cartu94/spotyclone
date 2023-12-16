@@ -11,8 +11,11 @@ export function Menu({ classes }) {
 export function Pin({ classes }) {
   return <Icon icon="iconoir:pin" className={classes} />;
 }
-export function Home({ classes }) {
-  return <Icon icon="jam:home" className={classes} />;
+export function HomeActive({ classes }) {
+  return <Icon icon="fluent:home-32-filled" className={classes} />;
+}
+export function HomeDefault({ classes }) {
+  return <Icon icon="fluent:home-32-regular" className={classes} />;
 }
 export function SearchActive({ classes }) {
   return <Icon icon="mingcute:search-fill" className={classes} />;
@@ -50,7 +53,8 @@ export default {
   Notification,
   Menu,
   Pin,
-  Home,
+  HomeActive,
+  HomeDefault,
   SearchActive,
   SearchDefault,
   Download,
