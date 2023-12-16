@@ -7,9 +7,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="font-montserrat flex bg-black max-h-screen p-2 pb-20 gap-2 w-screen">
+    <div className="font-montserrat flex bg-black max-h-screen p-2 pb-[76px] gap-2 w-screen">
       <Router>
-        <div className="flex flex-col gap-2 lg:w-[35%]">
+        <div className="flex flex-col gap-2 lg:w-[full]">
           <SearchHome />
           <LibraryCase />
         </div>

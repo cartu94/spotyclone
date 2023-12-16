@@ -41,6 +41,10 @@ export function SimpleArrowLeft({ classes }) {
 export function SimpleArrowRight({ classes }) {
   return <Icon icon="ep:arrow-right-bold" className={classes} />;
 }
+export function SimpleArrowUp({ classes }) {
+  return <Icon icon="ep:arrow-up-bold" className={classes} />;
+}
+
 
 export default {
   Notification,
@@ -56,4 +60,5 @@ export default {
   ArrowRight,
   SimpleArrowLeft,
   SimpleArrowRight,
+  SimpleArrowUp,
 };
