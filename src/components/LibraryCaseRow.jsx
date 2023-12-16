@@ -1,12 +1,12 @@
 export default function LibraryCaseRow() {
   return (
-    <div className="bg-background w-[90px] md:w-full flex justify-center items-center p-2 rounded-xl group transition duration-300 cursor-pointer hover:bg-white/20">
+    <div className="bg-background w-full lg:w-full flex justify-center lg:justify-start items-center px-0 py-2 lg:px-4 lg:py-3 gap-4 rounded-xl group transition duration-300 cursor-pointer hover:bg-white/20">
       <img
-        className="h-12 w-12 rounded-xl md:h-20 md:w-20"
+        className="h-12 w-12 rounded-lg lg:h-16 lg:w-16"
         src="https://picsum.photos/100"
         alt=""
       />
-      <div className="hidden lg:flex flex-col justify-center p-4 gap-2 text-active">
+      <div className="hidden lg:flex flex-col justify-between gap-1 text-active">
         <p className="text-active">Brani che ti piacciono</p>
         <p className="text-inactive">Playlist - Chill Music</p>
       </div>
