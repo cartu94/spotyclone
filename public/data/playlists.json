@@ -3,60 +3,60 @@
     "id": 1,
     "title": "Playlist Pop",
     "description": "Una playlist con le ultime hit pop",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 2,
     "title": "Playlist Rock",
     "description": "Una selezione delle migliori canzoni rock",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 3,
     "title": "Playlist Indie",
     "description": "Una playlist con le ultime hit indie",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 4,
     "title": "Playlist Rap",
     "description": "Una playlist con le ultime hit rap",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 5,
     "title": "Playlist Metal",
     "description": "Una playlist con le ultime hit metal",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 6,
     "title": "Playlist Jazz",
     "description": "Una playlist con le ultime hit jazz",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 7,
     "title": "Playlist Classica",
     "description": "Una playlist con i migliori brani di musica classica",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 8,
     "title": "Playlist Blues",
     "description": "Una playlist con le ultime hit blues",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 9,
     "title": "Playlist Country",
     "description": "Una playlist con le ultime hit country",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   },
   {
     "id": 10,
     "title": "Playlist Latina",
     "description": "Una playlist con le ultime hit latina",
-    "image": "https://picsum.photos/700"
+    "image": "https://picsum.photos/seed/"
   }
 ]

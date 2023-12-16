@@ -1,5 +1,4 @@
-import SfogliaTutto from "../components/SfogliaTutto";
-import AlbumCards from "../components/AlbumCards";
+import AlbumCard from "../components/AlbumCard";
 import Navbar from "../components/NavBar";
 
 export default function Categories() {
@@ -20,19 +19,19 @@ export default function Categories() {
     { id: 14, title: 'Nuove uscite nei podcast', },
   ];
 
-  const backgroundColors1 = ['red', 'blue', 'green', 'orange', 'purple', 'pink', 'yellow', 'lime', 'lightblue']; 
+  const backgroundColors = ['#E02689','#006351','#8329e2', '#193462', '#be5d17', '#ed2159', '#1a846b', '#008821', '#8f1d31', '#607f1f', '#0078e8'];
 
   return (
-    <div className='flex flex-col h-full overflow-hidden'>
+    <div className='flex flex-col h-full'>
       <Navbar />
-      <div className="flex-col flex overflow-y-auto overflow-x-hidden">
-        <SfogliaTutto />
-        <div className='flex p-5 gap-5 flex-col flex-wrap md:flex-row'>
-          {albumsData.map((album, index) => (
-            <AlbumCards
+      <div className="flex-col flex overflow-y-auto px-5">
+        <h1 className='text-active font-bold text-start text-2xl bg-gradient-to-b py-6'>Sfoglia tutto</h1>
+        <div className='flex gap-4 flex-wrap justify-start items-start'>
+          {albumsData.map((album) => (
+            <AlbumCard
               key={album.id}
               title={album.title}
-              backgroundColor={backgroundColors1[index % backgroundColors1.length]}
+              backgroundColor={backgroundColors[Math.floor(Math.random() * backgroundColors.length)]}
             />
           ))}
         </div>

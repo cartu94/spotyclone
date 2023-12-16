@@ -13,7 +13,7 @@ export default function App() {
           <SearchHome />
           <LibraryCase />
         </div>
-        <div className="w-full overflow-y-scroll bg-background rounded-xl">
+        <div className="w-full bg-background rounded-xl">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/categories" element={<Categories />} />

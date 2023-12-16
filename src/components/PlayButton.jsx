@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-import Icons from "../components/icons";
+import { Play } from "./Icons";
 
 export default function PlayButton() {
   return (
-    <Icons.Play
+    <Play
       classes={
-        `text-background shadow-xl bg-details hover:bg-hover-details hover:scale-110 rounded-full p-2 w-14 h-14 transition-all cursor-pointer`
+        `text-background shadow-xl bg-details hover:bg-hover-details hover:scale-110 rounded-full p-2 w-full h-full transition-all cursor-pointer`
       }
     />
   );
