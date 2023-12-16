@@ -3,7 +3,7 @@ import HomeGreetingsRow from "./HomeGreetingsRow";
 
 export default function HomeGreetings() {
   return (
-    <div className="bg-gradient-to-b from-[#170E3A] to-background text-active w-full flex flex-col gap-4 py-4">
+    <div className="bg-gradient-to-b from-cyan-950 to-background text-active w-full flex flex-col gap-4 py-4">
       <h1 className="text-4xl pl-4 mb-4 hidden md:block font-bold">
         Buongiorno
       </h1>

@@ -10,7 +10,7 @@ export default function LibraryCase() {
   }
 
   return (
-    <div className="overflow-hidden w-[90px] rounded-xl bg-background">
+    <div className="overflow-hidden w-[90px] rounded-xl lg:w-[350px] bg-background py-4 lg:p-0">
       <div className="hidden lg:flex justify-between p-4 group">
         <div className="text-inactive flex gap-2 items-center transition duration-300 cursor-pointer group-hover:text-active">
           <Icons.Library classes="text-2xl"></Icons.Library>
@@ -24,19 +24,19 @@ export default function LibraryCase() {
       </div>
       <div className="hidden lg:flex gap-2 px-2">
         <div className="group">
-          <p className="text-active bg-background py-1 px-4 rounded-full transition duration-300 cursor-pointer group-hover:bg-white/20">
+          <p className="text-active text-md bg-background2 py-2 px-4 rounded-full transition duration-300 cursor-pointer group-hover:bg-white/20">
             Playlist
           </p>
         </div>
         <div className="group">
-          <p className="text-active bg-background py-1 px-4 rounded-full transition duration-300 cursor-pointer group-hover:bg-white/20">
+          <p className="text-active text-md bg-background2 py-2 px-4 rounded-full transition duration-300 cursor-pointer group-hover:bg-white/20">
             Artist
           </p>
         </div>
       </div>
 
       <div className="hidden lg:flex justify-between p-4">
-        <div className="flex items-center h-12">
+        <div className="flex items-center gap-1 h-12">
           <button
             className="cursor-pointer mr-1 transition duration-300 hover:text-active hover:bg-white/20 rounded-full p-2"
             onClick={toggleSearchBox}
@@ -57,12 +57,16 @@ export default function LibraryCase() {
         </div>
 
         <div className="text-inactive flex items-center gap-2 transition duration-300 cursor-pointer hover:text-active">
-          <p className="text-lg">List</p>
+          <p className="text-md font-semibold">List</p>
           <Icons.Menu classes="text-2xl"></Icons.Menu>
         </div>
       </div>
 
-      <div className="p-2 flex flex-col gap-2 overflow-y-auto max-h-screen">
+      <div className="px-2 lg:p-2 flex flex-col gap-2 overflow-y-auto max-h-screen">
+        <LibraryCaseRow></LibraryCaseRow>
+        <LibraryCaseRow></LibraryCaseRow>
+        <LibraryCaseRow></LibraryCaseRow>
+        <LibraryCaseRow></LibraryCaseRow>
         <LibraryCaseRow></LibraryCaseRow>
         <LibraryCaseRow></LibraryCaseRow>
         <LibraryCaseRow></LibraryCaseRow>
