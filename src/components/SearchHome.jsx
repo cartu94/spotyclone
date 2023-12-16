@@ -15,7 +15,7 @@ function clickHome() {
 
 export default function SearchHome() {
   return (
-    <div className="text-sm font-bold flex flex-col gap-5 p-5 w-[90px] bg-background rounded-xl">
+    <div className="text-sm font-bold flex flex-col gap-5 p-5 w-[90px] lg:w-full bg-background rounded-xl">
       <Link to="/">
         <button
           onClick={clickHome}
