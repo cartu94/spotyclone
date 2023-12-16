@@ -11,7 +11,7 @@
         active: "#FFFFFF",
         background: "#121212",
         details: "#1AA7C6",
-        "hover-details": "14BADF",
+        "hover-details": "#14BADF",
       }
     },
   },
