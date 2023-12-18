@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import Card from "./Card";
 
 /**
- * 
+ *
  * @param {string} title il titolo della riga di card
  */
 export default function CardRow({ title }) {
@@ -18,11 +18,12 @@ export default function CardRow({ title }) {
     fetch("data/playlists.json")
       .then((res) => res.json())
       .then((data) => {
-        setPlaylists([...data])
-      }).catch((err) => {
+        setPlaylists([...data]);
+      })
+      .catch((err) => {
         console.error(err);
       });
-      // console.log("testPlaylists",playlists)
+    // console.log("testPlaylists",playlists)
   }, []);
 
   useEffect(() => {
@@ -38,11 +39,8 @@ export default function CardRow({ title }) {
   }, []);
 
   useEffect(() => {
-    if (screenWidth >= 732) {
-      setItemsNum(Math.floor(screenWidth / 240));
-    } else {
-      setItemsNum(Math.floor(screenWidth / 182));
-    }
+    if (screenWidth < 400) setItemsNum(2);
+    else setItemsNum(Math.floor(screenWidth / 200));
   }, [screenWidth]);
 
   return (
@@ -56,15 +54,16 @@ export default function CardRow({ title }) {
         </h3>
       </div>
 
-      <div ref={ref} className="w-full flex justify-center sm:justify-between items-center gap-4">
-      {playlists.length>0 &&  Array.from({ length: itemsNum }).map((_, i) => (
-          <Card
-            key={i}
-            title={playlists[i].title}
-            description={playlists[i].description}
-            image={playlists[i].image}
-          />
-        ))}
+      <div ref={ref} className="w-full flex justify-center items-center gap-4">
+        {playlists.length > 0 &&
+          Array.from({ length: itemsNum }).map((_, i) => (
+            <Card
+              key={i}
+              title={playlists[i].title}
+              description={playlists[i].description}
+              image={playlists[i].image}
+            />
+          ))}
       </div>
     </div>
   );

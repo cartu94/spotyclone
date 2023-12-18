@@ -31,6 +31,10 @@ export default {
         "my-2": "repeat(2, minmax(220px, 1fr))",
         "my-3": "repeat(3, minmax(220px, 1fr))",
       },
+      aspectRatio: {
+        '2/3': '2/3',
+        '1/1.5': '1/1.5',
+      },
     },
   },
   plugins: [],
