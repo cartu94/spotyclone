@@ -11,13 +11,14 @@ export default function Footer() {
           <p className="text-lg text-[#14badf]">Spotyclone</p>
           <p className="text-xs">© 2023</p>
         </button>
-        <div className="md:flex gap-6 text-sm hidden">
-          <a href="" className="hover:text-active transition-all">Legal</a>
-          <a href="" className="hover:text-active transition-all">Privacy Center</a>
-          <a href="" className="hover:text-active transition-all">Privacy Policy</a>
-          <a href="" className="hover:text-active transition-all">Cookies</a>
+        <div className="lg:flex gap-6 text-sm hidden">
+          <a href="https://github.com/AndreaBianco1996" target="_blank" className="hover:text-active transition-all" rel="noreferrer">Andrea Bianco</a>
+          <a href="https://github.com/cartu94" target="_blank" className="hover:text-active transition-all" rel="noreferrer">Luca Carturan</a>
+          <a href="https://github.com/yocopk" target="_blank" className="hover:text-active transition-all" rel="noreferrer">Andrea Marchese</a>
+          <a href="https://github.com/levo1312" target="_blank" className="hover:text-active transition-all" rel="noreferrer">Ernesto Vinasco</a>
+          <a href="https://github.com/davidetagini99" target="_blank" className="hover:text-active transition-all" rel="noreferrer">Davide Tagini</a>
         </div>
-          <button className="md:hidden block">
+          <button className="lg:hidden block">
             <Icons.SimpleArrowUp classes="text-active text-lg"></Icons.SimpleArrowUp>
           </button>
       </div>
