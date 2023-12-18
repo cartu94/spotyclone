@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "title": "Sole e Salsa",
+      "description": "Playlist - Musica Caliente"
+    },
+    {
+      "id": 2,
+      "title": "Notturno Jazz",
+      "description": "Playlist - Musica Jazz"
+    },
+    {
+      "id": 3,
+      "title": "Elettrico Pop",
+      "description": "Playlist - Musica Elettronica"
+    },
+    {
+      "id": 4,
+      "title": "Rock innovativo",
+      "description": "Playlist - Musica Rock"
+    },
+    {
+      "id": 5,
+      "title": "Melodie Pacifiche",
+      "description": "Playlist - Musica Rilassante"
+    },
+    {
+      "id": 6,
+      "title": "Rap Urbano",
+      "description": "Playlist - Musica Urban"
+    },
+    {
+        "id": 7,
+        "title": "Chill beats groove",
+        "description": "Playlist - Beat Rilassanti"
+      },
+      {
+        "id": 8,
+        "title": "Melodie Pacifiche",
+        "description": "Playlist - Musica Rilassante"
+      },
+      {
+        "id": 9,
+        "title": "Sole e Salsa",
+        "description": "Playlist - Musica Caliente"
+      },
+      {
+        "id": 10,
+        "title": "Notturno Jazz",
+        "description": "Playlist - Musica Jazz"
+      },
+      {
+        "id": 11,
+        "title": "Elettrico Pop",
+        "description": "Playlist - Musica Pop"
+      },
+      {
+        "id": 12,
+        "title": "Rock innovativo",
+        "description": "Playlist - Musica Rock"
+      },
+      {
+        "id": 13,
+        "title": "Melodie Pacifiche",
+        "description": "Playlist - Musica Rilassante"
+      },
+      {
+        "id": 14,
+        "title": "Rap Urbano",
+        "description": "Playlist - Musica Urban"
+      },
+      {
+          "id": 15,
+          "title": "Chill beats",
+          "description": "Playlist - Beats Rilassanti"
+        },
+        {
+          "id": 16,
+          "title": "Melodie Pacifiche",
+          "description": "Playlist - Musica Rilassante"
+        }
+  ]
