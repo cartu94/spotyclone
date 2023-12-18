@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import SearchHome from "./components/SearchHome";
 import LibraryCase from "./components/library/LibraryCase";
 import Footer from "./components/Footer";
+import Error from "./pages/Error";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/categories" element={<Categories />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </div>
       </Router>
