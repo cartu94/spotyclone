@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import HomeGreetings from "../components/home_greetings/HomeGreetings";
-import CardRow from "../components/CardRow";
+import CardRow from "../components/playlists/CardRow";
 
 export default function Home() {
   return (

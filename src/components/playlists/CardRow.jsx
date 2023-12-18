@@ -14,6 +14,7 @@ export default function CardRow({ title }) {
 
   // console.log("isPlaylistsNotEmpty",playlists.length > 0)
 
+  // Fetch the playlists data from the json file
   useEffect(() => {
     fetch("data/playlists.json")
       .then((res) => res.json())
@@ -26,6 +27,7 @@ export default function CardRow({ title }) {
     // console.log("testPlaylists",playlists)
   }, []);
 
+  // Get the width of the container and adds an event listener to handle page resize
   useEffect(() => {
     // when the component gets mounted
     setScreenWidth(ref.current.offsetWidth);
@@ -38,6 +40,7 @@ export default function CardRow({ title }) {
     return () => window.removeEventListener("resize", getWidth);
   }, []);
 
+  // Set the number of items to show based on the screen width
   useEffect(() => {
     if (screenWidth < 400) setItemsNum(2);
     else setItemsNum(Math.floor(screenWidth / 200));

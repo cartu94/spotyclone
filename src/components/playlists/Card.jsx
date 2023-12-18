@@ -1,5 +1,11 @@
 /* eslint-disable react/prop-types */
-import PlayButton from "./PlayButton";
+import PlayButton from "../PlayButton";
+
+/**
+ * @param {string} title the card title
+ * @param {string} description the card description
+ * @param {string} image the URL of the card image
+*/
 
 export default function Card({ title, description, image }) {
   return (
@@ -19,7 +25,6 @@ export default function Card({ title, description, image }) {
       <div className="h-12 w-full overflow-hidden text-ellipsis text-inactive">
         {description}
       </div>
-      
     </div>
   );
 }
