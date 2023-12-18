@@ -40,7 +40,7 @@ export default function Categories() {
         <h1 className="text-active font-bold text-start text-2xl bg-gradient-to-b py-6">
           Sfoglia tutto
         </h1>
-        <div className="grid grid-cols-2 gap-4 border sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
           {albumsData.map((album) => (
             <AlbumCard
               key={album.id}

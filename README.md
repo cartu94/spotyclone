@@ -1,5 +1,10 @@
 # SPOTYCLONE
 
+## Descrizione
+
+Progetto finale per il corso Front-End Developer di Opinno sviluppato in React/TailwindCSS
+Clone del design di Spotify con l'utilizzo di placeholder al posto dell'API ufficiale, privo di funzionalità relative alla musica e alle sue interazioni.
+
 Figma: <https://www.figma.com/file/tl1jnTAVVxyKcTiBHAGs2m/Team-2?type=design&node-id=0-1&mode=design&t=Ft4GF1ukINEZGUBF-0>
 
 ## Composizione gruppo
